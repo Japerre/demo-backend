@@ -19,6 +19,7 @@ public class StudentController {
         this.studentService = studentService;
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping
     public List<Student> getStudents(){
         return studentService.getStudents();
